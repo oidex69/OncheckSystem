@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="actingSystem.controller.editController">
+   <children>
+      <AnchorPane fx:id="topAnchor" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="goBackButton" layoutX="2.0" layoutY="4.0" mnemonicParsing="false" onAction="#goMain">
+               <graphic>
+                  <ImageView fx:id="backButton" fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../css/backButton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="clickSaveButton" layoutX="38.0" layoutY="4.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fx:id="saveButton" fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" style="-fx-fit-height: 35; -fx-fit-width: 30;" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="topAnchor1" layoutY="59.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="61.0" prefWidth="750.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label fx:id="accountTypeLabel" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutY="8.0" prefHeight="20.0" prefWidth="98.0" text="Account Type: " textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="574.0" layoutY="-14.6" prefHeight="27.0" prefWidth="46.0" text="Date:" textFill="WHITE" AnchorPane.rightAnchor="129.60000000000002" AnchorPane.topAnchor="-14.6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="accountType" layoutX="102.0" layoutY="8.0" prefHeight="20.0" prefWidth="98.0" text="Edit" textFill="WHITE" AnchorPane.leftAnchor="102.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="showDate" layoutX="615.0" layoutY="-20.0" prefHeight="37.0" prefWidth="134.0" promptText="00/00/0000" />
+            <Label layoutX="574.0" layoutY="25.0" prefHeight="27.0" prefWidth="46.0" text="Date:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="showDateEnd" layoutX="615.0" layoutY="19.0" prefHeight="37.0" prefWidth="134.0" promptText="00/00/0000" />
+            <Label fx:id="accountTypeLabel1" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="3.0" layoutY="29.0" prefHeight="20.0" prefWidth="92.0" text="Delete Row:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="delNum" layoutX="98.0" layoutY="26.0" prefHeight="26.0" prefWidth="46.0" promptText="Num" />
+            <Button fx:id="delButton" layoutX="152.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="35.0" text="Del" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bottomAnchor" layoutY="372.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="26.0" prefWidth="750.0" text="Copyright 2024 by Refrence Data. All Rights Reserved. OnCheck is Powered by OnCheck." textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="journalEntryAnchorPane" layoutY="102.0" prefHeight="474.0" prefWidth="750.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <GridPane prefHeight="35.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="417.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="0.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="-Infinity" prefWidth="150.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="-Infinity" prefWidth="150.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="35.0" prefWidth="387.0" text="Particulars" />
+                  <Label prefHeight="35.0" prefWidth="126.0" text="Description" GridPane.columnIndex="1" />
+                  <Label prefHeight="85.0" prefWidth="180.0" text="Debit" GridPane.columnIndex="2" />
+                  <Label prefHeight="89.0" prefWidth="228.0" text="Credit" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <ScrollPane fx:id="journalSrc" fitToHeight="true" fitToWidth="true" layoutY="35.0" prefHeight="438.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.200000000000045">
+               <content>
+                  <GridPane fx:id="journalGridPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="418.0" prefWidth="698.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="417.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="250.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="-Infinity" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="-Infinity" prefWidth="150.0" />
+                    </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Button.css" />
+      <URL value="@../css/Background.css" />
+      <URL value="@../css/payment.css" />
+   </stylesheets>
+</AnchorPane>

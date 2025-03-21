@@ -1,0 +1,71 @@
+
+/* Top side css */
+#topAnchor1 {
+    -fx-background-color: #3b7b7a;
+}
+
+/* Middle css */
+#gridPane,#journalGridPane,#paymentAnchorPane,#journalEntryAnchorPane{
+    -fx-background-color: #c2dac8;
+}
+
+#payment{
+    -fx-background-color: #c2dac8;
+}
+
+#journalEntry{
+    -fx-background-color: #c2dac8;
+}
+
+#desAnchor .label{
+    -fx-font-size: 16px;
+    -fx-text-fill:black;
+}
+
+#goBackButton{
+    -fx-image:url('backButton.png');
+    -fx-fit-width:30px;
+    -fx-fit-height:35px;
+    -fx-transition: background-color 0.5s ease;
+}
+
+#goBackButton:hover{
+    -fx-image: url('backButtonHover.png'); /* Correct relative path */
+    -fx-cursor: hand;  /* Hand cursor on hover */
+}
+
+#saveButton{
+    -fx-image:url('save.png');
+    -fx-fit-width:30px;
+    -fx-fit-height:35px;
+    -fx-transition: background-color 0.5s ease;
+}
+
+#saveButton:hover{
+    -fx-image: url('saveHover.png'); /* Correct relative path */
+    -fx-cursor: hand;  /* Hand cursor on hover */
+    
+}
+
+#addButton{
+    -fx-image:url('add.png');
+    -fx-fit-width:30px;
+    -fx-fit-height:35px;
+    -fx-transition: background-color 0.5s ease;
+}
+
+#addButton:hover{
+    -fx-image: url('addHover.png'); /* Correct relative path */
+    -fx-cursor: hand;  /* Hand cursor on hover */
+}
+
+#addTransactionButton,#clickSaveButton,#goBackButton{
+    -fx-padding:1px;
+    -fx-background-radius: 10px;
+    -fx-background-color: transparent; 
+    -fx-border-color:transparent; 
+}
+
+#addTransactionButton:hover,#clickSaveButton:hover,#goBackButton:hover{
+    -fx-cursor:hand;
+}

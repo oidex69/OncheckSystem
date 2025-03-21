@@ -1,0 +1,60 @@
+.TextField{
+    -fx-padding:5px;
+}
+/* Top Css */
+#topAnchor{
+    -fx-background-color:#3b7b7a;
+
+}
+/* Middle css */
+#desAnchor{
+    -fx-background-color: #c2dac8;
+}
+/* bottom side */
+#bottomAnchor{
+    -fx-background-color:#3b7b7a;
+}
+
+#bottomAnchor > Label{
+    -fx-text-fill:#fffdfd;
+}
+
+#scrPane {
+    -fx-background-color: #c2dac8;
+}
+#scrPanedr {
+    -fx-background-color: #c2dac8;
+}
+#scrPanecr {
+    -fx-background-color: #c2dac8;
+}
+
+
+/* All date */
+.date-picker {
+    -fx-background-color: transparent; /* Dark background */
+    -fx-border-color: transparent; /* Remove border color */
+    -fx-border-width: 0; /* Remove border width */
+    -fx-border:none;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent; /* Slightly lighter background for the text field */
+    -fx-border-color: transparent; /* Remove border color */
+    -fx-border-width: 0; /* Remove border width */
+    -fx-font-size:16px;
+    -fx-text-fill: white; /* White text color */
+}
+
+/* Style the drop-down arrow button in the DatePicker */
+.date-picker .arrow-button {
+    -fx-background-color: #11BBB0; /* Change background color */
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-padding:5 10 5 10;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-cursor:hand;
+    -fx-background-color: #11bbb07e; /* Match the text field */
+    -fx-background-radius: 5; /* Remove rounded corners if desired */
+}

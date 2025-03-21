@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="actingSystem.controller.MainController">
+   <children>
+      <AnchorPane fx:id="topAnchor" layoutY="-3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="90.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="508.0" layoutY="31.0" prefHeight="27.0" prefWidth="162.0" text="Date:" textFill="WHITE" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="31.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="98.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../css/Logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="showDate" layoutX="635.6" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="97.0" text="12/02/2024" textFill="WHITE" AnchorPane.rightAnchor="-85.60000000000002">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="userName" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="25.0" prefHeight="35.0" prefWidth="252.0" text="Username" textFill="WHITE" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="274.8" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="28.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bottomAnchor" layoutY="383.0" prefHeight="27.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="copyRight" alignment="CENTER" layoutY="1.0" prefHeight="18.0" prefWidth="600.0" text="Copyright 2024 by Refrence Data. All Rights Reserved. OnCheck is Powered by OnCheck." textFill="WHITE" AnchorPane.bottomAnchor="0.8000000000000007" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="desAnchor" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="485.0" prefWidth="750.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <VBox fx:id="transactionView" alignment="CENTER" layoutX="64.0" layoutY="18.0" prefHeight="445.0" prefWidth="620.0" AnchorPane.bottomAnchor="18.80000000000001" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="64.79999999999995" AnchorPane.topAnchor="18.0">
+               <children>
+                  <VBox fx:id="contentVbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="178.0" text="Transaction" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToJournalEntry" prefHeight="50.0" prefWidth="240.0" text="Journal">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToPayment" prefHeight="40.0" prefWidth="162.0" text="Payment">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goToRecepit" prefHeight="34.0" prefWidth="158.0" text="Receipt">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToEdit" prefHeight="40.0" prefWidth="162.0" text="Edit">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="132.0" text="Reports" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="goToDisplay" mnemonicParsing="false" onAction="#switchView" prefHeight="38.0" prefWidth="154.0" text="Display">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox fx:id="displayView" alignment="CENTER" layoutX="65.0" layoutY="20.0" prefHeight="445.0" prefWidth="620.0" visible="false" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <VBox fx:id="displayVBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="300.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="178.0" text="Display Reports">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToJournal" prefHeight="35.0" prefWidth="186.0" text="Jornal Entry" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToLedgerMenu" prefHeight="35.0" prefWidth="186.0" text="Ledger" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToTrial" prefHeight="35.0" prefWidth="186.0" text="Trial balance" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goToIncomeStatment" text="Income Expenses Statment">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="returnTransaction" mnemonicParsing="false" onAction="#switchView" prefHeight="26.0" prefWidth="178.0" text="&lt;-Go Back">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Background.css" />
+      <URL value="@../css/Button.css" />
+      <URL value="@../css/main.css" />
+   </stylesheets>
+</AnchorPane>

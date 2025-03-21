@@ -1,0 +1,17 @@
+#incomeGridPane,#expenseGridPane{
+    -fx-background-color: #c2dac8;
+}
+
+.label{
+    -fx-text-fill:black;
+}
+
+#topAnchor .label {
+    -fx-text-fill: white; /* Changes text color to black */
+}
+
+#desAnchor .label {
+    -fx-font-family:Times New Roman;
+    -fx-font-size:16px;
+    -fx-text-fill: black;
+}    

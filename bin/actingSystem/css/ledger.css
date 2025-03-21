@@ -1,0 +1,8 @@
+#drGridPane,#crGridPane {
+    -fx-font-size: 16px;
+    -fx-background-color:#c2dac8;
+}
+
+#desAnchor .label {
+    -fx-text-fill:black;
+}

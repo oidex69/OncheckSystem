@@ -1,0 +1,20 @@
+#accountContainer{
+    -fx-background-color:#c2dac8;
+}
+
+#scrPane .button{
+    -fx-background-color: rgb(167, 188, 172);
+    -fx-pref-width: 200px; /* Preferred width */
+    -fx-min-width: 150px;  /* Minimum width */
+    -fx-max-width: 200px;  /* Maximum width */
+    -fx-pref-height: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+    -fx-transition-duration: 1s;
+}
+
+#scrPane .button:hover{
+    -fx-background-color: rgb(159, 178, 163);
+    -fx-cursor:hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

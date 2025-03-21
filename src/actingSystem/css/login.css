@@ -1,0 +1,116 @@
+#createAccount{
+    -fx-background-color: #c2dac8;
+    
+}
+/* yo chai create ma jani wala css */
+#createAccountLabel{
+    -fx-text-fill:white;
+    -fx-font-size:16px;
+    -fx-alignment:center;
+    -fx-content-display:center;
+}
+/* Yeta bata login ma jani ko ko wala css */
+#logIn{
+    -fx-text-fill:white;
+    -fx-font-size:16px;
+    -fx-alignment:center-left;
+    -fx-padding:0 0 0 10;
+}
+#gobackToMainLabel{
+    -fx-text-fill:white;
+    -fx-font-size:16px;
+    -fx-alignment:center-right;
+    -fx-content-display:center;
+}
+
+#errorMessage{
+    -fx-text-fill:white;
+    -fx-font-size:16px;
+    -fx-alignment:center;
+    -fx-content-display:center;
+}
+
+
+#createAccountLabel:hover{
+    -fx-cursor:hand;
+    -fx-underline: true;
+}
+
+#logIn:hover{
+    -fx-cursor:hand;
+    -fx-underline: true;
+}
+
+#createAccount{
+    -fx-background-color: #c2dac8;
+}
+
+#login{
+    -fx-background-color: #c2dac8;
+}
+
+#createAccountLabel:hover{
+    -fx-cursor:hand;
+    -fx-underline: true;
+}
+
+#submitButton{
+    -fx-background-color: #ffffff  ;  /* Primary color */
+    -fx-text-fill: rgb(0, 0, 0);           /* Text color */
+    -fx-background-radius: 40;      /* Rounded corners */
+    -fx-padding: 10 20; 
+}
+
+#submitButton:hover{
+    -fx-cursor:hand;
+    -fx-underline: true;
+    
+}
+
+#loginContainer {
+    -fx-justify:center;
+    -fx-padding: 30px;
+    -fx-background-color: rgba(255, 255, 255, 0.295);
+    -fx-background-radius: 10;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+#userNameField,#passwordField,#createUsrname,#createPassword,#checkPassword,#acctName{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #3498db;
+    -fx-border-width: .5px;
+    -fx-padding: 5 5 5 15;
+    -fx-font-size: 14px;
+    -fx-pref-width:250px;
+    -fx-pref-height:35px;
+}
+
+#accountType,#loginaccountType{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #3498db;
+    -fx-border-width: .5px;
+}
+
+#createButton,#loginButton{
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(180, 180, 180, 0.2), 10, 0, 0, 5);
+    -fx-border-radius: 20px;
+    -fx-pref-height:35px;
+    -fx-pref-width:150px;
+
+}
+
+#createButton:hover,#loginButton:hover{
+    -fx-cursor:hand;
+}
+
+#vBox{
+    -fx-background-color:#ffffff28;
+    -fx-background-radius:15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0, 4);
+}
+
+

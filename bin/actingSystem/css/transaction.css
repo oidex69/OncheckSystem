@@ -1,0 +1,7 @@
+.label-margin {
+    -fx-padding: 10 10 10 10; /* (top, right, bottom, left) */
+}
+
+#gridPane{
+    -fx-background-color: #B11225;
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="actingSystem.controller.journalController">
+   <children>
+      <AnchorPane fx:id="topAnchor" maxWidth="1.7976931348623157E308" prefHeight="90.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="121.0" layoutY="26.0" prefHeight="35.0" prefWidth="461.0" text="Journal Entry" textFill="#fcfcfc" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="168.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="517.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="98.0" text="From Date:" textFill="WHITE" AnchorPane.bottomAnchor="47.199999999999996" AnchorPane.rightAnchor="134.60000000000002" AnchorPane.topAnchor="8.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="showDate" layoutX="605.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="130.0" AnchorPane.bottomAnchor="47.2" AnchorPane.rightAnchor="14.600000000000023" AnchorPane.topAnchor="8.0" />
+            <Label layoutX="518.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="98.0" text="To Date:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="showDateEnd" layoutX="605.0" layoutY="44.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="130.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bottomAnchor" layoutY="372.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="600.0" text="Copyright 2024 by Refrence Data. All Rights Reserved. OnCheck is Powered by OnCheck." textFill="WHITE" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="desAnchor" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="485.0" prefWidth="750.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <HBox fx:id="TotalContainter" layoutY="270.0" prefHeight="40.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="391.0" text="Total:" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="totalAmount" alignment="CENTER" maxWidth="400.0" prefHeight="40.0" prefWidth="200.0" text="Total Amount" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="-0.5" layoutY="-0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="445.0" prefWidth="750.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ScrollPane fx:id="scrPane" fitToHeight="true" fitToWidth="true" layoutX="-0.8" layoutY="47.2" prefHeight="398.0" prefWidth="750.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="47.0">
+                     <content>
+                        <GridPane fx:id="gridPane" gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="398.0" prefWidth="765.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="447.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="0.0" prefWidth="35.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
+                           </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="750.0" AnchorPane.bottomAnchor="404.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="447.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="0.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="ALWAYS" />
+                     </rowConstraints>
+                     <children>
+                        <Label ellipsisString="" prefHeight="20.0" prefWidth="363.0" text="Particulars" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="41.0" text="L.F." textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="151.0" text="Debit Amount" textFill="WHITE" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="150.0" text="Credit Amount" textFill="WHITE" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="goBackButton" layoutX="24.0" layoutY="39.0" mnemonicParsing="false" onAction="#goMain" prefHeight="20.0" prefWidth="22.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="29.0">
+         <graphic>
+            <ImageView fx:id="backButton" fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../css/backButton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Background.css" />
+      <URL value="@../css/Button.css" />
+      <URL value="@../css/journalCss.css" />
+   </stylesheets>
+</AnchorPane>

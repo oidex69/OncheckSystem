@@ -1,0 +1,45 @@
+.button{
+    -fx-font-size:12px;
+    -fx-background-color: rgb(167, 188, 172);
+    -fx-pref-width: 200px; /* Preferred width */
+    -fx-min-width: 150px;  /* Minimum width */
+    -fx-max-width: 200px;  /* Maximum width */
+    -fx-pref-height: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+    -fx-transition-duration: 1s;
+}
+
+.button:hover{
+    -fx-background-color: rgb(159, 178, 163);
+    -fx-cursor:hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#contentVbox{
+    -fx-background-color:#c2dac8;
+    -fx-background-radius:15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0, 4);
+}
+
+#contentVbox .label{
+    -fx-text-fill:black;
+    -fx-font-size:16px;
+}
+
+#displayVBox{
+    -fx-background-color:#c2dac8;
+    -fx-background-radius:15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0, 4);
+}
+
+.label{
+    -fx-pref-width: 200px; /* Preferred width */
+    -fx-pref-height: 20px;
+    -fx-alignment:center;
+    -fx-margin:0 0 10 0;
+}
+
+#showDate{
+    -fx-alignment:center-left;
+}

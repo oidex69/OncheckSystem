@@ -1,0 +1,34 @@
+.button{
+    -fx-background-color:White;
+    -fx-text-fill:black;
+
+}
+
+.button:hover{
+    -fx-background-color: #dedede;
+}
+
+.label-margin {
+    -fx-padding: 10 10 10 10; /* (top, right, bottom, left) */
+}
+
+.menuButton{
+    -fx-background-radius: 50%; /* Makes the ImageView circular */
+    -fx-clip-radius: 50%; 
+}
+
+#goBackButton{
+    -fx-image:url('backButton.png');
+    -fx-fit-width:30px;
+    -fx-fit-height:35px;
+    -fx-transition: background-color 0.5s ease;
+    -fx-padding:1px;
+    -fx-background-radius: 10px;
+    -fx-background-color: transparent; 
+    -fx-border-color:transparent; 
+}
+
+#goBackButton:hover{
+    -fx-image: url('backButtonHover.png'); /* Correct relative path */
+    -fx-cursor: hand;  /* Hand cursor on hover */
+}
